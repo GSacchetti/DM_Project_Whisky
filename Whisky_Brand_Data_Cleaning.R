@@ -19,10 +19,10 @@ df2$Rating[is.na(df2$Rating) & df2$WB.Ranking == "F"] <- mean(df2_F$Rating, na.r
 df2$Rating[is.na(df2$Rating) & df2$WB.Ranking == "G"] <- mean(df2_G$Rating, na.rm = TRUE)
 
 
-df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "A"] <- mean(df2_A$Votes, na.rm = TRUE)
-df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "B"] <- mean(df2_B$Votes, na.rm = TRUE)
-df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "C"] <- mean(df2_C$Votes, na.rm = TRUE)
-df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "D"] <- mean(df2_D$Votes, na.rm = TRUE)
-df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "E"] <- mean(df2_E$Votes, na.rm = TRUE)
-df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "F"] <- mean(df2_F$Votes, na.rm = TRUE)
-df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "G"] <- mean(df2_G$Votes, na.rm = TRUE)
+df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "A"] <- round(mean(df2_A$Votes, na.rm = TRUE))
+df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "B"] <- round(mean(df2_B$Votes, na.rm = TRUE))
+df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "C"] <- round(mean(df2_C$Votes, na.rm = TRUE))
+df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "D"] <- round(mean(df2_D$Votes, na.rm = TRUE))
+df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "E"] <- round(mean(df2_E$Votes, na.rm = TRUE))
+df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "F"] <- round(mean(df2_F$Votes, na.rm = TRUE))
+df2$Votes[is.na(df2$Votes) & df2$WB.Ranking == "G"] <- round(mean(df2_G$Votes, na.rm = TRUE))
